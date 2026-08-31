@@ -190,25 +190,10 @@ col1, col2 = st.columns([1, 2])
 
 with col1:
 
-    st.markdown(
-        """
-        <div style="
-            width:200px;
-            height:200px;
-            border-radius:50%;
-            border:2px solid #dddddd;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:3.5rem;
-            font-weight:600;
-            margin:auto;
-        ">
-        TS
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.image(
+    "profile.jpeg",
+    width=220
+)
 
 
 with col2:
