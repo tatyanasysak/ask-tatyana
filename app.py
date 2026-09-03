@@ -29,6 +29,9 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENAI_API_KEY")
 
+if not API_KEY and "OPENAI_API_KEY" in st.secrets:
+    API_KEY = st.secrets["OPENAI_API_KEY"]
+
 
 # ==================================================
 # LOAD CV + CAREER INFORMATION & SETUP AI
